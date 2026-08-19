@@ -9,7 +9,7 @@ const { faker } = require('@faker-js/faker');
 
 test('Verify add Employee with Basic Details', async ({ page }) => {
 
- // test.slow() // triple timeout
+
   await page.goto('/web/index.php/auth/login');
   console.log("Launched application")
 
