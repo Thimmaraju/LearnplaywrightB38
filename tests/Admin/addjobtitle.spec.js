@@ -13,9 +13,9 @@ test("Verify admin can add job title ", async ({page}) =>{
 
    // await page.getByRole('textbox', { name: 'Username' }).fill("Admin")
 
-    await page.locator("//input[@placeholder='Username']").fill(logindata.username)
+    await page.locator("//input[@placeholder='Username']").fill(process.env.APP_USERNAME)
 
-    await page.locator("//input[@type='password']").fill(logindata.password)
+    await page.locator("//input[@type='password']").fill(process.env.APP_PASSWORD)
 
     await page.locator("//button[@type='submit']").click()
 
