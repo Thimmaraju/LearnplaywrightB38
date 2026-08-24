@@ -42,7 +42,7 @@ export default defineConfig({
     screenshot: "on",
     video: "on",
     trace: "on",
-    headless: false,
+    headless: true,
    // viewport: { width: 440 , height: 956 },
   
 
