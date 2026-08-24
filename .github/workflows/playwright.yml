@@ -10,6 +10,10 @@ jobs:
   test:
     timeout-minutes: 120
     runs-on: ubuntu-latest
+    env:
+      APP_USERNAME: ${{ secrets.APP_USERNAME }}
+      APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
+      SSN: ${{ secrets.SSN }}
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
