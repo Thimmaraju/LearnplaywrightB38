@@ -13,9 +13,9 @@ test('Verify add Employee with Basic Details', async ({ page }) => {
   await page.goto('/web/index.php/auth/login');
   console.log("Launched application")
 
-  await page.getByRole('textbox', { name: 'Username' }).fill(data.username);
+  await page.getByRole('textbox', { name: 'Username' }).fill(process.env.APP_USERNAME);
    console.log("Entered username ")
-  await page.getByRole('textbox', { name: 'Password' }).fill(data.password);
+  await page.getByRole('textbox', { name: 'Password' }).fill(process.env.APP_PASSWORD);
    console.log("Entered password ")
   await page.getByRole('button', { name: 'Login' }).click();
   console.log("Clicked Login")

@@ -19,7 +19,7 @@ test('Login with valid Credntials', async ({ page }) => {
 test('Login with invalid username and valid password', async ({ page }) => {
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
   await page.getByRole('textbox', { name: 'Username' }).fill(logincreds.wrongusername);
-  await page.getByRole('textbox', { name: 'Password' }).fill(logincreds.password);
+  await page.getByRole('textbox', { name: 'Password' }).fill(process.env.APP_PASSWORD);
   await page.getByRole('button', { name: 'Login' }).click();
   await expect(page.getByText('Invalid credentials')).toBeVisible();
 });
