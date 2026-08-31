@@ -56,3 +56,24 @@ test('Verify try to login with blank spaces', async ({ page }) => {
   await expect(page.getByText('Required').nth(1)).toBeVisible();
 });
 
+
+test("verify forgot password link", async ({page}) =>{
+
+
+    await page.goto('/')
+
+    await page.locator('//p[contains(.,"Forgot your")]').click()
+})
+
+
+
+test("Greencart", async ({page}) =>{
+
+
+    await page.goto('https://rahulshettyacademy.com/seleniumPractise/#/')
+
+   for(let i=1; i<=10; i++){
+	
+	    await page.locator(`(//div[@class="product-action"]/button[@type="button"])[${i}]`).click()
+	}
+})

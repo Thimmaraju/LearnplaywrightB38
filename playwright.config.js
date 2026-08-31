@@ -43,6 +43,7 @@ export default defineConfig({
     video: "on",
     trace: "on",
     headless: true,
+    testIdAttribute : "href"
    // viewport: { width: 440 , height: 956 },
   
 
