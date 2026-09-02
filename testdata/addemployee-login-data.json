@@ -1,0 +1,14 @@
+{
+  "adminUser": {
+    "username": "Admin",
+    "password": "admin123"
+  },
+  "employee": {
+    "firstName": "Akhil",
+    "lastName": "User",
+    "employeeId": "A1B2C3"
+  },
+  "loginDetails": {
+    "password": "Abc@1234"
+  }
+}
