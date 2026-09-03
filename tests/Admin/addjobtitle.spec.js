@@ -46,7 +46,7 @@ test("Verify admin can add job title ", async ({page}) =>{
 
     await page.locator("//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@class='oxd-input oxd-input--active']").fill(faker.person.jobTitle())
     
-    await page.getByRole('textbox', { name: 'Type description here' }).fill(jobtitledata.jobdescription)
+    await page.getByRole('textbox', { name: 'Type description here' }).fill(jobtitledata.jobDescription)
 
     await page.getByRole('textbox', { name: 'Add note' }).fill(jobtitledata.notes)
     await page.getByRole('button', { name: 'Save' }).click()
