@@ -11,12 +11,19 @@ if(true){
 }
 
 
-if(true){
+// if(true){
 
 
 
-  console.log(x) // Not accessible
+//   console.log(x) // Not accessible
 
-}
+// }
 
+
+let usernametext = "Username : Admin"
+
+let x = usernametext.split(" ")[2]
+
+
+console.log(x)
 
