@@ -149,3 +149,10 @@ console.log(arr[0].firstname)
 
 // Mutable 
 // Immutable 
+
+
+// let x:number  = 10
+
+//  x= "TRaju"
+
+//typeof
