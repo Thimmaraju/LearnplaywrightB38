@@ -1,5 +1,9 @@
 
 
+// const { Names } = require("./functions.js")
+
+
+
 // for , while , do while
 
 // forEach , for in , for of - ES6 
@@ -87,3 +91,6 @@ do{
 // for in 
 // for of 
 // forEach 
+
+// Names()
+
