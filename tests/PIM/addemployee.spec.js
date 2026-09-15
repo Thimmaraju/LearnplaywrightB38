@@ -25,11 +25,18 @@ test('Verify add Employee with Basic Details', async ({ page }) => {
   console.log("Navigated to Add Employee page")
   await page.waitForTimeout(6000)
 
+  const employeeDetails = ["Mamata", "abc", "xyz", "ureyg38"]
+
   let firstname = faker.person.firstName()
   await page.getByRole('textbox', { name: 'First Name' }).fill(firstname);
   console.log("Filled First Name:"+ firstname )
+
+  //await page.getByRole('textbox', { name: 'First Name' }).fill(employeeDetails[0]);
   let middlename = faker.person.middleName()
   await page.getByRole('textbox', { name: 'Middle Name' }).fill(middlename);
+
+   
+  //await page.getByRole('textbox', { name: 'Middle Name' }).fill(employeeDetails[1]);
   console.log("Filled Middle Name: "+ middlename)
   let lastname = faker.person.lastName()
   await page.getByRole('textbox', { name: 'Last Name' }).fill(lastname);

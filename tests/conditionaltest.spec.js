@@ -40,7 +40,7 @@ test("Working with Dynamic Elements - some times visible ", async ({ page }) => 
 })
 
 
-test("Launch App Based on Browser", async ({ page, browserName }) => {
+test("Launch App Based on Browser", async function ({ page, browserName }) {
 
     switch (browserName) {
         case "chromium": {

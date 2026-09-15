@@ -98,3 +98,89 @@ console.log(randomIndianMobileNumber())
 console.log(randomUSMobileNumber())
 
 console.log(randomUSMobileNumber())
+
+
+function add(num1=8, num2=6){
+
+    console.log(num1)
+    console.log(num2)
+    console.log(num1+num2)
+}
+
+add()
+
+//Default Params 
+
+//2+ undefined // NaN
+
+//Arrow functions 
+
+// ES6
+
+
+// function printName(){
+
+//     console.log("Rupa")
+// }
+
+
+printName = () => console.log("Rupa")
+
+printName()
+
+
+// function multiply(n1,n2){
+
+//     console.log(n1)
+//     console.log(n2)
+//     console.log(n1*n2)
+// }
+
+multiply = (n1,n2) =>   {    
+    console.log(n1)
+    console.log(n2)
+    console.log(n1*n2)
+} 
+
+
+multiply(4,8)
+
+// functionName = () => {
+
+
+// }
+
+// functionName = n1=> {
+
+    
+// }
+
+// functionName = (n1,n2) => {
+
+
+// }
+
+// functionName = () =>  single statement 
+
+// functionName = (n1,n2) => {
+ 
+//     // several statements
+
+// }
+
+
+//Anonymous function - function without name 
+
+// function (){
+
+
+// }
+
+
+//  () =>{
+
+// }
+
+
+
+
