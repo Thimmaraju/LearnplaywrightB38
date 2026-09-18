@@ -14,6 +14,7 @@
     "@types/node": "^26.1.2"
   },
   "dependencies": {
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "moment": "^2.31.0"
   }
 }

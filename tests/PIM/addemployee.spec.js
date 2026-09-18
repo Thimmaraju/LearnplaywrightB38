@@ -55,11 +55,11 @@ test('Verify add Employee with Basic Details', async ({ page }) => {
 
 
 
-test('Verify launching flipcart', async ({ page }) => {
-  console.log("Starting flipcart launch test")
-  await page.goto('/');
-  console.log("Navigated to / (Flipcart home)")
+// test('Verify launching flipcart', async ({ page }) => {
+//   console.log("Starting flipcart launch test")
+//   await page.goto('/');
+//   console.log("Navigated to / (Flipcart home)")
   
-});
+// });
 
 
