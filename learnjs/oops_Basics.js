@@ -21,12 +21,12 @@ class calculator {
 
     y = "Chethan"
 
-    constructor(){
+    printName(){
 
         console.log("Raju")
     }
 
-    add(n1, n2) {
+    constructor(n1, n2) {
 
         console.log(n1 + n2)
     }
@@ -34,6 +34,12 @@ class calculator {
     substract(n1, n2) {
 
         console.log(n1 - n2)
+
+        this.printName()
+
+        this.Multiply(n1,n2)
+
+        console.log(this.x)
     }
 
     Multiply(n1, n2) {
@@ -48,7 +54,7 @@ class calculator {
 
 }
 
-const cal1 = new calculator()
+const cal1 = new calculator(3,8)
 
 // cal1.add(3,8)
 
@@ -61,7 +67,7 @@ const cal1 = new calculator()
 
 
 
-const cal2 = new calculator()
+const cal2 = new calculator(23,45)  // Object or Instance of the class 
 
 // console.log(cal2.y)
 
@@ -78,11 +84,50 @@ const cal2 = new calculator()
 // It will invoked or called automatically 
 // U dont need to explicitly call that constructor 
 
+// single constructor 
+
 // if dont define the constructor - there will be empty contructor present by default 
 
 
 
 
-cal3 = new calculator()
+cal3 = new calculator(12,34)
 
-cal4 = new calculator()
+cal4 = new calculator(1,7)
+
+cal4.substract(2,8)
+
+
+
+// class classname{
+
+//   // Variables 
+
+//   // Methods 
+
+
+//   constructor(){
+
+//   }
+// //   v1
+// //   v2
+// //   v3
+
+
+// // m1{
+
+
+// this.m2()
+// this.m3()
+// }
+// // m2
+// // m3
+// // m4
+
+// }
+
+
+// const obj = new classname()
+
+// obj.m1()
+
