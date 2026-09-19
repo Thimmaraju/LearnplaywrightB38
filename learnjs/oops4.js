@@ -75,7 +75,7 @@ obj4.m3()
 // test framwrok - TestNG / BDD cucumber / Mocha / Mocha / Playwright test 
  // Gherkin
 
-// Design Pattern - POM / Builder pattern / Page Factory Pattern / Screen Play Plattern
+// Design Pattern - POM / Builder pattern / Page Factory Pattern / Screen Play Plattern / Singleton //  35 +
 
 // Clean Code Principle - SOLID, DRY, Yagni , 
 
