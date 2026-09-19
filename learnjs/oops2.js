@@ -1,5 +1,5 @@
 
-
+//Inheritance 
 class A {
 
     m1() {
