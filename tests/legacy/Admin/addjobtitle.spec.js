@@ -1,15 +1,17 @@
 import { test, expect } from '@playwright/test';
 
-import logindata from "../../testdata/login.json"
+import logindata from "../../../testdata/login.json"
 
-import jobtitledata from "../../testdata/addjobtitle.json"
+import jobtitledata from "../../../testdata/addjobtitle.json"
 
 const { faker } = require('@faker-js/faker');
 
-test("Verify admin can add job title ", async ({page}) =>{
+test("Verify admin can add job title ",{tag : "@smoke"}, async ({page}) =>{
 
 
     await page.goto('/web/index.php/auth/login')
+
+    
 
    // await page.getByRole('textbox', { name: 'Username' }).fill("Admin")
 

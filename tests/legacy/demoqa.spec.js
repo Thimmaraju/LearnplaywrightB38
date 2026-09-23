@@ -1,6 +1,6 @@
 import { de } from '@faker-js/faker';
 import { test, expect } from '@playwright/test';
-import personDetails from '../testdata/smaple.js';
+import personDetails from '../../testdata/smaple.js';
 
 test('fill the form', async ({ page, browserName }) => {
   
@@ -59,7 +59,7 @@ test('fill the form - CLI', async ({ page }) => {
 });
 
 
-test('fill the form - Object', async ({ page }) => {
+test('fill the form - Object',{tag: "@smoke"}, async ({ page }) => {
 
   let formdata = {
 

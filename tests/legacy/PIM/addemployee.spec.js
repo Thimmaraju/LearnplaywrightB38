@@ -1,7 +1,7 @@
 
 import { test, expect } from '@playwright/test';
 
-import data from "../../testdata/login.json"
+import data from "../../../testdata/login.json"
 
 
 const { faker } = require('@faker-js/faker');
