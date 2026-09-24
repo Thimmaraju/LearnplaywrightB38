@@ -11,7 +11,8 @@
   "devDependencies": {
     "@faker-js/faker": "^10.6.0",
     "@playwright/test": "^1.62.1",
-    "@types/node": "^26.1.2"
+    "@types/node": "^26.1.2",
+    "allure-playwright": "^3.12.2"
   },
   "dependencies": {
     "dotenv": "^17.4.2",

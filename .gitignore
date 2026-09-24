@@ -7,3 +7,5 @@ node_modules/
 /playwright/.auth/
 results.json
 package-lock.json
+allure-report
+allure-results
