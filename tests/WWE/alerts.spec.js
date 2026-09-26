@@ -26,7 +26,7 @@ test.describe('Automation - Working with Alerts', () => {
     page.locator('text=Click for JS Confirm').click();
     // Wait for the confirm dialog and accept it (Click OK)
     page.on('dialog', async dialog => {
-      await dialog.accept();
+      await dialog.dismiss();
     });
     await page.waitForTimeout(5000)
   });

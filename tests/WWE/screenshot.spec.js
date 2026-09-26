@@ -6,7 +6,7 @@ test('page screenshot', async ({ page }) => {
     await page.waitForTimeout(3000)
     //await page.screenshot({ path: 'tests/screenshots/HomePage.png' })
 
-    await page.screenshot({ path:'tests/screenshots/'+Date.now()+'HomePage.png'})
+    await page.screenshot({ path:'screenshots/'+Date.now()+'HomePage.png'})
 });
 
 test('page element screenshot 2 ', async ({ page }) => {
@@ -16,7 +16,7 @@ test('page element screenshot 2 ', async ({ page }) => {
 
     //await page.screenshot({ path: 'tests/screenshots/HomePage.png' })
 
-    await page.locator('//img[@src="./images/tomato.jpg"]').screenshot({ path:'tests/screenshots/'+Date.now()+'tamoto.jpg'})
+    await page.locator('//img[@src="./images/tomato.jpg"]').screenshot({ path:'screenshots/'+Date.now()+'tamoto.jpg'})
 });
 
 

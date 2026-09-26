@@ -60,7 +60,7 @@ test.describe('Automation - Working With Elements', () => {
 
         const [download] = await Promise.all([
             page.waitForEvent('download'),
-            page.locator('//a[@href="download/village.jpg"]').click()
+              page.locator('//a[@href="download/upexlogo.png"]').click()
         ]);
 
         const suggestedFileName = download.suggestedFilename()
