@@ -1,19 +1,21 @@
 import { test, expect } from '@playwright/test';
 
-import logindata from "../../testdata/login.json"
+import logindata from "../../../testdata/login.json"
 
-import jobtitledata from "../../testdata/addjobtitle.json"
+import jobtitledata from "../../../testdata/addjobtitle.json"
 
 const { faker } = require('@faker-js/faker');
 
-test("Verify admin can add job title ", async ({page}) =>{
+test("Verify admin can add job title ",{tag : "@smoke"}, async ({page}) =>{
 
 
     await page.goto('/web/index.php/auth/login')
 
+    
+
    // await page.getByRole('textbox', { name: 'Username' }).fill("Admin")
 
-    await page.locator("//input[@placeholder='Username']").fill(process.env.APP_USERNAME)
+    await page.locator(`//input[@placeholder='Username']`).fill(process.env.APP_USERNAME)
 
     await page.locator("//input[@type='password']").fill(process.env.APP_PASSWORD)
 
@@ -46,7 +48,7 @@ test("Verify admin can add job title ", async ({page}) =>{
 
     await page.locator("//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@class='oxd-input oxd-input--active']").fill(faker.person.jobTitle())
     
-    await page.getByRole('textbox', { name: 'Type description here' }).fill(jobtitledata.jobdescription)
+    await page.getByRole('textbox', { name: 'Type description here' }).fill(jobtitledata.jobDescription)
 
     await page.getByRole('textbox', { name: 'Add note' }).fill(jobtitledata.notes)
     await page.getByRole('button', { name: 'Save' }).click()
