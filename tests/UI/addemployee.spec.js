@@ -1,10 +1,10 @@
 import {test, expect} from "@playwright/test"
 
-import { loginpage } from "../pages/loginpage.po"
-import { dashboardPage } from "../pages/dashboardpage.po"
-import { addEmployeePage } from "../pages/addemployee.po"
+import { loginpage } from "../../pages/loginpage.po"
+import { dashboardPage } from "../../pages/dashboardpage.po"
+import { addEmployeePage } from "../../pages/addemployee.po"
 
-import employeedata from "../testdata/addemployee-login-data.json"
+import employeedata from "../../testdata/addemployee-login-data.json"
 
 test("Verify Admin can add employee", async ({page}) => {
 

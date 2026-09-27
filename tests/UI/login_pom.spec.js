@@ -1,8 +1,8 @@
 import {test,expect} from "@playwright/test"
 
-import { loginpage } from "../pages/loginpage.po"
+import { loginpage } from "../../pages/loginpage.po"
 
-import data from "../testdata/login.json"
+import data from "../../testdata/login.json"
 
 test.beforeEach(async ({page}) =>{
     const login = new loginpage(page)

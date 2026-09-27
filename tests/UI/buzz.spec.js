@@ -1,10 +1,10 @@
 import {test, expect} from "@playwright/test"
 
-import { loginpage } from "../pages/loginpage.po"
+import { loginpage } from "../../pages/loginpage.po"
 
-import { dashboardPage } from "../pages/dashboardpage.po"
+import { dashboardPage } from "../../pages/dashboardpage.po"
 
-import { buzzpage } from "../pages/buzzpage.po"
+import { buzzpage } from "../../pages/buzzpage.po"
 
 import { faker } from "@faker-js/faker"
 
